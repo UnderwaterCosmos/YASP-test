@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply h-full font-['RobotoRegular'] text-[#898290];
+
+  input:focus {
+    @apply outline-none;
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'RobotoRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Roboto-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'RobotoMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/fonts/Roboto-Medium.ttf');
+  }
+  @font-face {
+    font-family: 'RobotoBold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/Roboto-Bold.ttf');
+  }
+}
